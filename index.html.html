@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Vila-seca Jiu-Jitsu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpg.jpeg" alt="Logo VBJJ" class="logo-img" onerror="this.style.display='none'">
+            <div class="logo-text">VILA-SECA JIU-JITSU</div>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="que-es-bjj.html">¿Qué es el BJJ?</a></li>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="tarifas.html">Tarifas</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="normas.html">Normas y dudas</a></li>
+                <li><a href="contacto.html">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 style="font-size: 3rem; text-transform: uppercase; margin-bottom: 10px;">
+                LA VIDA ES MEJOR CON JIU-JITSU
+            </h1>
+            
+            <p class="hero-subtext" style="font-size: 1.4rem; margin-bottom: 20px; font-weight: bold;">
+                Adquiere valores. Sé tu mejor versión.
+            </p>
+
+            <img src="fondo.jpg.jpeg" alt="Vila-seca Jiu-Jitsu Team" class="foto-portada-extra">
+            
+            <div class="hero-buttons">
+                <a href="horarios.html" class="btn-principal" style="margin-right: 15px;">Ver Horarios</a>
+                <button onclick="abrirWhatsappPrueba()" class="btn-secundario">Solicitar Clase de Prueba</button>
+            </div>
+     
+        </div>
+    </section>
+
+    <section class="seccion-pagina" style="text-align: center;">
+        <h2>¿Por qué entrenar con nosotros?</h2>
+        <div class="grid-beneficios" style="margin-top: 30px;">
+            
+            <div class="item-beneficio">
+                <i class="fas fa-medal"></i>
+                <h4>Enfoque Técnico</h4>
+                <p>Priorizamos el aprendizaje detallado y la ejecución correcta sobre la fuerza bruta.</p>
+            </div>
+
+            <div class="item-beneficio">
+                <i class="fas fa-users-cog"></i>
+                <h4>Comunidad Enfocada</h4>
+                <p>Grupo de entrenamiento comprometido con la mejora constante y el respeto en el tatami.</p>
+            </div>
+
+            <div class="item-beneficio">
+                <i class="fas fa-dumbbell"></i>
+                <h4>Condición Física</h4>
+                <p>Mejora tu resistencia, fuerza funcional y movilidad mientras aprendes a defenderte.</p>
+            </div>
+
+            <div class="item-beneficio">
+                <i class="fas fa-warehouse"></i>
+                <h4>Instalaciones Premium</h4>
+                <p>Disfruta de un local de <strong>400m² totalmente nuevo</strong> y equipado específicamente para garantizar tu comodidad y máximo rendimiento.</p>
+            </div>
+
+            <div class="item-beneficio">
+                <i class="fas fa-user-graduate"></i>
+                <h4>Staff Calificado</h4>
+                <p>Recibe formación personalizada por <strong>personas experimentadas</strong> que guiarán cada parte de tu proceso de aprendizaje.</p>
+            </div>
+
+            <div class="item-beneficio">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Ambiente Sano y Seguro</h4>
+                <p>Entrena en un espacio, donde la limpieza y la seguridad son prioridad para crear un <strong>ambiente, limpio, sano y seguro</strong>.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Vila-seca Jiu-Jitsu. Todos los derechos reservados.</p>
+    </footer>
+
+    <div class="whatsapp-float">
+        <button onclick="abrirWhatsappGeneral()" class="btn-float"><i class="fab fa-whatsapp"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

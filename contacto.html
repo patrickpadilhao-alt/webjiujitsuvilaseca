@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Aprende Brazilian Jiu-Jitsu en Vila-seca. Clases de BJJ (Gi y No-Gi) para adultos, adolescentes y niños. Instalaciones premium de 400m². ¡Solicita tu clase de prueba gratis!">
+    
+    <link rel="icon" href="logo.jpg.jpeg" type="image/jpeg">
+
+    <title>Ubicación y Contacto | Vila-seca Jiu-Jitsu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .contenedor-redes {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        /* INSTAGRAM: Degradado original y más grande */
+        .insta-original {
+            font-size: 3.5rem; /* Tamaño grande */
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: transform 0.3s;
+        }
+        /* TIKTOK: Negro con efecto sombra cian/rojo */
+        .tiktok-original {
+            font-size: 3rem;
+            color: #000000;
+            filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+            transition: transform 0.3s;
+        }
+        /* FACEBOOK: Azul clásico */
+        .fb-original {
+            font-size: 3rem;
+            color: #1877F2;
+            transition: transform 0.3s;
+        }
+
+        /* Animación al pasar el ratón */
+        .insta-original:hover, .tiktok-original:hover, .fb-original:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpg.jpeg" alt="Logo VBJJ" class="logo-img" onerror="this.style.display='none'">
+            <div class="logo-text">VILA-SECA JIU-JITSU</div>
+        </div>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="que-es-bjj.html">¿Qué es el BJJ?</a></li>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="tarifas.html">Tarifas</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="normas.html">Normas y Dudas</a></li>
+                <li><a href="contacto.html" class="activo">Ubicación</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function toggleMenu() {
+                var menu = document.querySelector("#menu-principal ul");
+                menu.classList.toggle("activo");
+            }
+        </script>
+    </header>
+
+    <section class="seccion-pagina">
+        <h2 style="text-align: center; margin-bottom: 40px;">Ven a Entrenar</h2>
+
+        <div class="contenedor-contacto">
+            
+            <div class="info-contacto">
+                <h3>¿Dónde estamos?</h3>
+                <p>Ven a conocer nuestras instalaciones en persona.</p>
+                
+                <ul class="lista-datos">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>
+                            <strong>Dirección:</strong><br>
+                            Avinguda de la Generalitat nº 24<br>
+                            Local 1 y 2, Vila-seca
+                        </span>
+                    </li>
+                   <li>
+    <i class="fas fa-envelope"></i>
+    <span>
+        <strong>Email:</strong><br>
+        <a href="mailto:vilasecajiujitsu@gmail.com" style="color: var(--bjj-blue); text-decoration: none; font-weight: bold;">
+            vilasecajiujitsu@gmail.com
+        </a>
+    </span>
+</li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>
+                            <strong>Horario:</strong><br>
+                            Lunes a Viernes: 07:30 - 21:00<br>
+                            Sábados: 10:00 - 13:00 (Open Mat)
+                        </span>
+                    </li>
+                </ul>
+
+                <div class="caja-llamada">
+                    <h4>¿Dudas?</h4>
+                    <p>Para más información, escríbenos directamente al WhatsApp.</p>
+                    <button onclick="abrirWhatsappGeneral()" class="btn-whatsapp-grande">
+                        <i class="fab fa-whatsapp"></i> Hablar por WhatsApp
+                    </button>
+                </div>
+
+                <div class="redes-sociales">
+                    <h4>Síguenos en redes:</h4>
+                    
+                    <div class="contenedor-redes">
+                        
+                        <a href="https://www.instagram.com/vilasecajiujitsu" target="_blank" style="text-decoration: none;">
+                            <i class="fab fa-instagram insta-original"></i>
+                        </a>
+
+                        <a href="https://pro.tiktok.com/t/ZN9RghgnCaVss-LPVVA/" target="_blank" style="text-decoration: none;">
+                            <i class="fab fa-tiktok tiktok-original"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/share/1GUotG2ACq/?mibextid=wwXIfr" target="_blank" style="text-decoration: none;">
+                            <i class="fab fa-facebook fb-original"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mapa-container">
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0" 
+                    loading="lazy" 
+                    allowfullscreen
+                    src="https://maps.google.com/maps?q=Avinguda+de+la+Generalitat+24,+Vila-seca&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Vila-seca Jiu-Jitsu. Todos los derechos reservados.</p>
+    </footer>
+
+    <div class="whatsapp-container">
+        <div id="whatsapp-mensaje" class="wa-mensaje">
+            ¿Tienes alguna duda? ¡Escríbenos! 👇
+        </div>
+        <button onclick="abrirWhatsappGeneral()" class="btn-float"><i class="fab fa-whatsapp"></i></button>
+    </div>
+    
+    <script src="script.js"></script>
+    
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector("#menu-principal ul");
+            menu.classList.toggle("activo");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Aprende Brazilian Jiu-Jitsu en Vila-seca. Clases de BJJ (Gi y No-Gi) para adultos, adolescentes y niños. Instalaciones premium de 400m². ¡Solicita tu clase de prueba gratis!">
+    
+    <link rel="icon" href="logo.jpg.jpeg" type="image/jpeg">
+
+    <title>Tarifas | Vila-seca Jiu-Jitsu</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpg.jpeg" alt="Logo VBJJ" class="logo-img" onerror="this.style.display='none'">
+            <div class="logo-text">VILA-SECA JIU-JITSU</div>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="que-es-bjj.html">¿Qué es el BJJ?</a></li>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="tarifas.html" class="activo">Tarifas</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="normas.html">Normas y Dudas</a></li>
+                <li><a href="contacto.html">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="seccion-pagina" style="text-align: center;">
+        <h2 style="font-size: 2.2rem; text-transform: uppercase;">INVIERTE EN TI Y EN TU SALUD</h2>
+        <p class="subtitulo">Elige el compromiso que mejor se adapte a tus metas.</p>
+
+        <div style="background-color: #e3f2fd; color: #0055D4; padding: 15px; border-radius: 8px; display: inline-block; margin-bottom: 30px; border: 1px solid #0055D4;">
+            <i class="fas fa-info-circle"></i> <strong>MISMO PRECIO PARA TODOS:</strong> Las tarifas son válidas tanto para Adultos como para Niños.
+        </div>
+
+        <div class="grid-precios">
+            
+            <div class="tarjeta-precio destacado">
+                <div class="etiqueta-top">¡OFERTA APERTURA!</div>
+                <h3>TARIFA FUNDADOR</h3>
+                
+                <p style="text-decoration: line-through; color: #999; font-size: 1.2rem; margin-bottom: -15px; margin-top: 10px;">55€</p>
+                <p class="precio">45€<span>/mes</span></p>
+                
+                <p style="font-size: 0.9rem; color: #d32f2f; font-weight: bold; margin-bottom: 15px; background: #ffebee; padding: 5px; border-radius: 4px;">
+                    <i class="fas fa-fire"></i> Solo 50 primeros Adultos y 50 Niños
+                </p>
+
+                <ul class="lista-ventajas-precio">
+                    <li><i class="fas fa-check"></i> Clases Ilimitadas (Gi y No-Gi)</li>
+                    <li><i class="fas fa-check"></i> <strong>Open Mat Incluido</strong></li>
+                    <li><i class="fas fa-check"></i> Sin Matrícula de inscripción</li>
+                    <li><i class="fas fa-check"></i> Precio 45€ garantizado de por vida</li>
+                </ul>
+                <button onclick="consultarTarifa('Tarifa Fundador (45€)')" class="btn-precio">RESERVAR PLAZA</button>
+            </div>
+
+            <div class="tarjeta-precio">
+                <h3>TRIMESTRAL</h3>
+                <p class="precio">125€<span>/3 meses</span></p>
+                
+                <p style="font-size: 1.1rem; color: #0055D4; font-weight: bold; margin-bottom: 5px;">(Sale a 41,60€/mes)</p>
+                
+                <p style="font-size: 0.9rem; color: #666; font-style: italic; margin-bottom: 20px;">Pago único trimestral</p>
+                <ul class="lista-ventajas-precio">
+                    <li><i class="fas fa-check"></i> Acceso Ilimitado</li>
+                    <li><i class="fas fa-check"></i> <strong>Open Mat Incluido</strong></li>
+                    <li><i class="fas fa-check"></i> Olvídate de pagar cada mes</li>
+                    <li><i class="fas fa-check"></i> Sin permanencia</li>
+                </ul>
+                <button onclick="consultarTarifa('Trimestral (125€)')" class="btn-precio" style="background: #333;">SOLICITAR INFO</button>
+            </div>
+
+            <div class="tarjeta-precio">
+                <div class="etiqueta-top" style="background-color: #333;">ACCESO ILIMITADO</div>
+                <h3>ANUAL</h3>
+                <p class="precio">480€<span>/año</span></p>
+                
+                <p style="font-size: 1.1rem; color: #0055D4; font-weight: bold; margin-bottom: 5px;">(Sale a 40€/mes)</p>
+
+                <p style="font-size: 0.9rem; color: #666; font-style: italic; margin-bottom: 20px;">Un solo pago anual</p>
+                <ul class="lista-ventajas-precio">
+                    <li><i class="fas fa-check"></i> <strong>Todo Incluido</strong></li>
+                    <li><i class="fas fa-check"></i> <strong>Open Mat Incluido</strong></li>
+                    <li><i class="fas fa-check"></i> Prioridad en seminarios</li>
+                    <li><i class="fas fa-check"></i> Camiseta del equipo de regalo</li>
+                </ul>
+                <button onclick="consultarTarifa('Anual (480€)')" class="btn-precio" style="background: #333;">SOLICITAR INFO</button>
+            </div>
+
+        </div>
+
+        <div style="margin-top: 50px; padding-top: 30px; border-top: 1px solid #eee; display: flex; justify-content: center;">
+            <div style="background: white; border: 1px solid #ddd; padding: 20px 40px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-align: center; max-width: 400px;">
+                <h4 style="color: #333; margin-bottom: 10px; font-size: 1.2rem; text-transform: uppercase;">VISITA SEMANAL</h4>
+                <p style="font-size: 2rem; font-weight: bold; color: var(--bjj-blue); margin: 10px 0;">20€</p>
+                <p style="font-size: 0.95rem; color: #666;">Acceso completo durante 7 días consecutivos. Ideal si estás de paso o quieres probar una semana entera.</p>
+                <button onclick="consultarTarifa('Visita Semanal (20€)')" class="btn-precio" style="margin-top: 15px; background: #333;">CONSULTAR</button>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Vila-seca Jiu-Jitsu. Todos los derechos reservados.</p>
+    </footer>
+
+    <div class="whatsapp-container">
+        <div id="whatsapp-mensaje" class="wa-mensaje">
+            ¿Tienes alguna duda? ¡Escríbenos! 👇
+        </div>
+        <button onclick="abrirWhatsappGeneral()" class="btn-float"><i class="fab fa-whatsapp"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector("#menu-principal ul");
+            menu.classList.toggle("activo");
+        }
+    </script>
+</body>
+</html>
