@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Normas y Preguntas Frecuentes | Vila-seca Jiu-Jitsu</title>
+    
+    <meta name="description" content="Aprende Brazilian Jiu-Jitsu en Vila-seca. Clases de BJJ (Gi y No-Gi) para adultos, adolescentes y niños. Instalaciones premium de 400m². ¡Solicita tu clase de prueba gratis!">
+    
+    <link rel="icon" href="logo.jpg.jpeg" type="image/jpeg">
+
+    <title>Inicio | Vila-seca Jiu-Jitsu</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
     <header>
         <div class="logo-container">
-            <img src="logo.jpg.jpeg" alt="Logo VBJJ" class="logo-img">
+            <img src="logo.jpg.jpeg" alt="Logo VBJJ" class="logo-img" onerror="this.style.display='none'">
             <div class="logo-text">VILA-SECA JIU-JITSU</div>
         </div>
-
-        <div class="menu-icon" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </div>
-
+        <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
         <nav id="menu-principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -26,151 +26,248 @@
                 <li><a href="instalaciones.html">Instalaciones</a></li>
                 <li><a href="tarifas.html">Tarifas</a></li>
                 <li><a href="horarios.html">Horarios</a></li>
-                <li><a href="normas.html">Normas y Dudas</a></li>
+                <li><a href="normas.html" class="activo">Normas y Dudas</a></li>
                 <li><a href="contacto.html">Ubicación</a></li>
             </ul>
         </nav>
-
-        <script>
-            function toggleMenu() {
-                var menu = document.querySelector("#menu-principal ul");
-                menu.classList.toggle("activo");
-            }
-        </script>
     </header>
 
-    <section class="seccion-pagina">
-        <h2 style="text-align: center;">Normativa de Higiene</h2>
-        <p class="subtitulo">El respeto empieza por cuidarnos a nosotros mismos y a los compañeros.</p>
+    <section class="seccion-pagina" style="text-align: center; padding-bottom: 10px;">
+        <h2 style="font-size: 2.5rem; text-transform: uppercase;">Normas y Vestimenta</h2>
+    </section>
+
+    <section class="seccion-gris" style="margin-top: 0;">
+        <h3 style="text-align: center; margin-bottom: 10px;"><i class="fas fa-hand-sparkles"></i> Normativa de Higiene</h3>
+        <p style="text-align: center; margin-bottom: 30px; color: #666;">El respeto empieza por cuidarnos a nosotros mismos y a los compañeros.</p>
         
-        <div class="caja-destacada">
-            <ul class="lista-normas-grande">
-                <li>
-                    <i class="fas fa-tshirt"></i>
+        <div style="max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-left: 5px solid #00796b;">
+            <ul style="list-style: none; padding: 0;">
+                
+                <li style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+                    <i class="fas fa-tshirt" style="font-size: 1.8rem; color: #00796b; min-width: 30px; text-align: center;"></i>
                     <div>
-                        <strong>Ropa Limpia</strong>
-                        <p>El kimono o la ropa de entreno debe estar recién lavada antes de cada clase.</p>
+                        <strong style="font-size: 1.1rem; display: block; margin-bottom: 5px;">Ropa Limpia</strong>
+                        <p style="margin: 0; color: #555;">El kimono o la ropa de entreno debe estar limpia antes de cada clase.</p>
                     </div>
                 </li>
-                <li>
-                    <i class="fas fa-hand-scissors"></i>
+
+                <li style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+                    <i class="fas fa-hand-scissors" style="font-size: 1.8rem; color: #00796b; min-width: 30px; text-align: center;"></i>
                     <div>
-                        <strong>Uñas Cortas</strong>
-                        <p>Imprescindible mantener uñas de manos y pies cortas para evitar cortes.</p>
+                        <strong style="font-size: 1.1rem; display: block; margin-bottom: 5px;">Uñas Cortas</strong>
+                        <p style="margin: 0; color: #555;">Imprescindible mantener uñas de manos y pies cortas para evitar cortes.</p>
                     </div>
                 </li>
-                <li>
-                    <i class="fas fa-shower"></i>
+
+                <li style="display: flex; gap: 20px; align-items: flex-start;">
+                    <i class="fas fa-shower" style="font-size: 1.8rem; color: #00796b; min-width: 30px; text-align: center;"></i>
                     <div>
-                        <strong>Higiene Personal</strong>
-                        <p>Ducha obligatoria después de cada entrenamiento.</p>
+                        <strong style="font-size: 1.1rem; display: block; margin-bottom: 5px;">Higiene Personal</strong>
+                        <p style="margin: 0; color: #555;">Ducha recomendada después de cada entrenamiento.</p>
                     </div>
                 </li>
+
             </ul>
+        </div>
+    </section>
+
+    <section class="seccion-pagina">
+        <h2 style="text-align: center; margin-bottom: 40px; text-transform: uppercase;">Equipamiento Requerido</h2>
+
+        <div class="contenedor-doble">
+            
+            <div class="caja-equipo estilo-nogi">
+                <div class="titulo-equipo">
+                    <h3>NO-GI (Sin Kimono)</h3>
+                </div>
+                <ul class="lista-limpia">
+                    <li><i class="fas fa-check"></i> <strong>Camiseta:</strong> Rashguard (ajustada).</li>
+                    <li><i class="fas fa-check"></i> <strong>Pantalón:</strong> Short de lucha sin cremalleras.</li>
+                    
+                    <li class="nota-gris">
+                        <strong>Para Chicas:</strong> Recomendamos leggings largos. Si usas short, es obligatorio llevar malla debajo.
+                    </li>
+                    
+                    <li><i class="fas fa-shoe-prints"></i> <strong>Chanclas:</strong> Obligatorias fuera del tatami.</li>
+                </ul>
+            </div>
+
+            <div class="caja-equipo estilo-gi">
+                <div class="titulo-equipo">
+                    <h3>GI (Con Kimono)</h3>
+                </div>
+                <ul class="lista-limpia">
+                    <li><i class="fas fa-check"></i> <strong>Kimono:</strong> Blanco, Azul o Negro.</li>
+                    <li><i class="fas fa-check"></i> <strong>Cinturón:</strong> Según tu grado.</li>
+                    
+                    <li class="nota-azul">
+                        <strong>Obligatorio:</strong> Uso de Rashguard debajo de la chaqueta (Hombres y Mujeres).
+                    </li>
+
+                    <li><i class="fas fa-shoe-prints"></i> <strong>Chanclas:</strong> Obligatorias fuera del tatami.</li>
+                </ul>
+            </div>
+
         </div>
     </section>
 
     <section class="seccion-gris">
-        <h2 style="text-align: center; margin-bottom: 40px;">Equipamiento Requerido</h2>
+        <h2 style="text-align: center; margin-bottom: 30px;">Preguntas Frecuentes</h2>
         
-        <div class="contenedor-columnas">
-            <div class="columna-info borde-negro" style="border-top: 5px solid black;">
-                <h3><i class="fas fa-user-ninja"></i> NO-GI (Sin Kimono)</h3>
-                <ul class="lista-equipamiento">
-                    <li><i class="fas fa-check-circle"></i> <strong>Camiseta de lycra (Rashguard)</strong>.</li>
-                    <li style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-                    <div style="display: flex; gap: 15px;">
-                        <i class="fas fa-tshirt" style="font-size: 1.5rem; color: #333; margin-top: 5px;"></i>
-                        <div>
-                            <strong style="font-size: 1.1rem; color: #0055D4;">NO-GI (Sin Kimono)</strong>
-                            <p style="margin: 5px 0; color: #555;">
-                                Se usa camiseta ajustada (Rashguard) y pantalón corto de lucha.
-                            </p>
-                            <p style="margin: 5px 0; font-size: 0.95rem; color: #444; background-color: #f9f9f9; padding: 10px; border-radius: 5px; border-left: 3px solid #0055D4;">
-                                <strong>Nota importante para chicas:</strong> Recomendamos el uso de <strong>mallas largas (leggings)</strong> o, si usas pantalón corto, que lleves una <strong>malla de compresión debajo</strong> para entrenar con total seguridad y comodidad.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                    <li><i class="fas fa-shoe-prints"></i> <strong>Chanclas</strong> (Para salir del tatami).</li>
-                </ul>
-            </div>
+        <div class="faq-container">
 
-            <div class="columna-info borde-azul" style="border-top: 5px solid #003366;">
-                <h3><i class="fas fa-tshirt"></i> GI (Con Kimono)</h3>
-                <ul class="lista-equipamiento">
-                    <li><i class="fas fa-check-circle"></i> <strong>Kimono de BJJ</strong>.<br>Colores permitidos: Blanco, Azul o Negro.</li>
-                    <li><i class="fas fa-check-circle"></i> <strong>Cinturón</strong> correspondiente al grado.</li>
-                    <li><i class="fas fa-female"></i> Mujeres: Malla o rashguard debajo.</li>
-                    <li><i class="fas fa-shoe-prints"></i> <strong>Chanclas</strong> (Para salir del tatami).</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="seccion-pagina" id="faq">
-        <h2 style="text-align: center; margin-bottom: 40px; border-top: 1px solid #eee; padding-top: 40px;">Preguntas Frecuentes</h2>
-        
-        <div style="max-width: 800px; margin: 0 auto;">
-            
-            <div style="margin-bottom: 30px;">
-                <h3 style="color: #003366; margin-bottom: 10px;"><i class="fas fa-question-circle"></i> ¿Necesito estar en forma para empezar?</h3>
-                <p style="line-height: 1.6; color: #555;">
-                    Absolutamente no. El Jiu-Jitsu es precisamente para ponerse en forma. La resistencia y la fuerza las irás ganando entrenamiento tras entrenamiento. Adaptamos la intensidad a tu nivel inicial.
-                </p>
-            </div>
-
-            <div style="margin-bottom: 30px;">
-                <h3 style="color: #003366; margin-bottom: 10px;"><i class="fas fa-question-circle"></i> ¿Qué tengo que llevar el primer día?</h3>
-                <p style="line-height: 1.6; color: #555;">
-                    Para la clase de prueba solo necesitas ropa deportiva cómoda (pantalón corto y camiseta), unas chanclas para moverte por el vestuario y agua. Si tienes dudas, escríbenos al WhatsApp.
-                </p>
-            </div>
-
-            <div style="margin-bottom: 30px;">
-                <h3 style="color: #003366; margin-bottom: 10px;"><i class="fas fa-question-circle"></i> ¿Es peligroso? ¿Me haré daño?</h3>
-                <p style="line-height: 1.6; color: #555;">
-                    Como cualquier deporte de contacto, existe un riesgo, pero en nuestra academia la seguridad es la prioridad número uno. Fomentamos el "tapeo" (rendirse) antes que el ego. Si sigues las instrucciones, es muy seguro.
-                </p>
-            </div>
-
-            <div style="margin-bottom: 30px;">
-                <h3 style="color: #003366; margin-bottom: 10px;"><i class="fas fa-question-circle"></i> Soy mayor, ¿puedo entrenar?</h3>
-                <p style="line-height: 1.6; color: #555;">
-                    ¡Por supuesto! Tenemos alumnos de todas las edades. El BJJ se adapta a tu cuerpo y a tus capacidades, no al revés.
-                </p>
-            </div>
-<div class="faq-item">
+            <div class="faq-item">
                 <button class="faq-pregunta">
-                    No tengo Kimono (Gi), ¿puedo entrenar?
+                    ¿Dónde puedo aparcar? (Ver Mapa)
                     <i class="fas fa-chevron-down"></i>
                 </button>
                 <div class="faq-respuesta">
-                    <p>¡Por supuesto! No necesitas comprar nada para empezar. En tu <strong>primera clase de prueba te lo dejamos totalmente gratis</strong>. Si decides apuntarte, disponemos de un servicio de <strong>alquiler de Kimono</strong> para que puedas entrenar mientras esperas a tener tu propia equipación.</p>
+                    <p>Hay zonas gratuitas muy cerca. Haz clic para ver la ubicación:</p>
+                    <ul style="list-style: none; padding: 0;">
+                        
+                        <li style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                            <strong>🅿️ Opción 1: Parking público</strong><br>
+                            <span style="font-size: 0.9rem; color: #666;">A dos minutos andando.</span><br>
+                            
+                            <a href="https://maps.app.goo.gl/Qy8hZU3eYhBvxum87" target="_blank" style="color: #0055D4; text-decoration: none; font-weight: bold; margin-top: 5px; display: inline-block;">
+                                <i class="fas fa-map-marker-alt"></i> Ver en Google Maps
+                            </a>
+                        </li>
+
+                        <li style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                            <strong>🅿️ Opción 2: Parking Público</strong><br>
+                            <span style="font-size: 0.9rem; color: #666;">Al lado del gimnasio.</span><br>
+                            
+                            <a href="https://maps.app.goo.gl/SwGiYYcNQ9oPM3TW6" target="_blank" style="color: #0055D4; text-decoration: none; font-weight: bold; margin-top: 5px; display: inline-block;">
+                                <i class="fas fa-map-marker-alt"></i> Ver en Google Maps
+                            </a>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
-        </div>
-        
-        <div style="text-align: center; margin-top: 40px;">
-            <p>¿Tienes alguna duda que no sale aquí?</p>
-            <button onclick="abrirWhatsappGeneral()" class="btn-principal">Preguntar por WhatsApp</button>
+
+            <div class="faq-item">
+                <button class="faq-pregunta">
+                    ¿Es peligroso? ¿Me haré daño?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-respuesta">
+                    <p>Como cualquier deporte de contacto, existe un riesgo, pero en nuestra academia la seguridad es la prioridad número uno. Enseñamos a cuidar al compañero. Si dejas el ego fuera y sigues las instrucciones, es muy seguro.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-pregunta">
+                    ¿Necesito experiencia o estar en forma?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-respuesta">
+                    <p><strong>Para nada.</strong> Absolutamente no. El Jiu-Jitsu es precisamente para ponerse en forma. La resistencia y la fuerza las irás ganando entrenamiento tras entrenamiento. Adaptamos la intensidad a tu nivel inicial.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-pregunta">
+                    No tengo Kimono, ¿puedo probar?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-respuesta">
+                    <p>¡Por supuesto! No necesitas comprar nada para empezar. En tu primera clase de prueba te lo dejamos totalmente gratis. Si decides apuntarte, disponemos de un servicio de alquiler de Kimono para que puedas entrenar mientras esperas a tener tu propia equipación.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-pregunta">
+                    ¿Cómo funciona la clase de prueba?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-respuesta">
+                    <p>Trae ropa cómoda, chanclas y agua. Ven mínimo 15 minutos antes. <strong>Rellena este formulario para reservar tu plaza:</strong></p>
+                    
+                    <div style="margin-top: 20px; background: #f5f5f5; padding: 20px; border-radius: 8px; border-left: 4px solid #25D366;">
+                        <form id="form-prueba" onsubmit="enviarPorWhatsapp(event)" style="display: flex; flex-direction: column; gap: 12px; text-align: left;">
+                            
+                            <div>
+                                <label style="font-weight: bold; font-size: 0.9rem; color: #333; display: block; margin-bottom: 5px;">Nombre Completo:</label>
+                                <input type="text" id="wa_nombre" required placeholder="Tu nombre" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+                            </div>
+
+                            <div>
+                                <label style="font-weight: bold; font-size: 0.9rem; color: #333; display: block; margin-bottom: 5px;">Edad:</label>
+                                <input type="number" id="wa_edad" required placeholder="Ej: 25" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+                            </div>
+
+                            <div>
+                                <label style="font-weight: bold; font-size: 0.9rem; color: #333; display: block; margin-bottom: 5px;">¿Qué día y horario quieres probar?</label>
+                                <input type="text" id="wa_horario" required placeholder="Ej: Martes por la tarde" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+                            </div>
+
+                            <div>
+                                <label style="font-weight: bold; font-size: 0.9rem; color: #333; display: block; margin-bottom: 5px;">¿Has practicado algún deporte de contacto antes?</label>
+                                <select id="wa_experiencia" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+                                    <option value="No, soy principiante">No, soy principiante</option>
+                                    <option value="Sí, tengo experiencia">Sí, tengo experiencia</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label style="font-weight: bold; font-size: 0.9rem; color: #333; display: block; margin-bottom: 5px;">Si marcaste "Sí", ¿cuál y cuánto tiempo?</label>
+                                <input type="text" id="wa_detalle" placeholder="Ej: Judo, 2 años (Déjalo en blanco si no tienes)" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+                            </div>
+
+                            <button type="submit" style="background-color: #25D366; color: white; border: none; padding: 12px; border-radius: 4px; font-weight: bold; cursor: pointer; margin-top: 10px; font-size: 1rem; transition: background 0.3s; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                                <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Enviar por WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                    </div>
+            </div>
+
         </div>
     </section>
 
-    <footer>
-        <p>© 2026 Vila-seca Jiu-Jitsu. Todos los derechos reservados.</p>
-    </footer>
-
-    <div id="whatsapp-float" class="whatsapp-float">
+    <footer><p>© 2026 Vila-seca Jiu-Jitsu. Todos los derechos reservados.</p></footer>
+    
+    <div class="whatsapp-container">
+        <div id="whatsapp-mensaje" class="wa-mensaje">
+            ¿Tienes alguna duda? ¡Escríbenos! 👇
+        </div>
         <button onclick="abrirWhatsappGeneral()" class="btn-float"><i class="fab fa-whatsapp"></i></button>
     </div>
 
     <script src="script.js"></script>
-    
     <script>
-        function toggleMenu() {
-            var menu = document.querySelector("#menu-principal ul");
-            menu.classList.toggle("activo");
+        function toggleMenu() { document.querySelector("#menu-principal ul").classList.toggle("activo"); }
+
+        // CÓDIGO DEL FORMULARIO A WHATSAPP
+        function enviarPorWhatsapp(event) {
+            event.preventDefault(); // Evita que la página se recargue
+
+            // ATENCIÓN: Cambia este número por el tuyo real
+            const telefono = "34600000000"; 
+
+            // Recoger los datos
+            const nombre = document.getElementById("wa_nombre").value;
+            const edad = document.getElementById("wa_edad").value;
+            const horario = document.getElementById("wa_horario").value;
+            const experiencia = document.getElementById("wa_experiencia").value;
+            const detalle = document.getElementById("wa_detalle").value;
+
+            // Construir el mensaje
+            let mensaje = `Hola, me gustaría reservar una clase de prueba.%0A%0A`;
+            mensaje += `*Nombre:* ${nombre}%0A`;
+            mensaje += `*Edad:* ${edad} años%0A`;
+            mensaje += `*Horario:* ${horario}%0A`;
+            mensaje += `*Experiencia:* ${experiencia}%0A`;
+            
+            if (detalle !== "") {
+                mensaje += `*Detalle:* ${detalle}%0A`;
+            }
+
+            // Crear el enlace y abrir WhatsApp
+            const url = `https://wa.me/${telefono}?text=${mensaje}`;
+            window.open(url, '_blank');
         }
     </script>
 </body>
