@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Aprende Brazilian Jiu-Jitsu en Vila-seca. Clases de BJJ (Gi y No-Gi) para adultos, adolescentes y niños. Instalaciones premium de 400m². ¡Solicita tu clase de prueba gratis!">
+    
+    <link rel="icon" href="logo.jpg.jpeg" type="image/jpeg">
+
+    <title>Nuestras Instalaciones | Vila-seca Jiu-Jitsu</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+           <img src="logo.jpg.jpeg" alt="Logo VBJJ" class="logo-img" onerror="this.style.display='none'">
+            <div class="logo-text">VILA-SECA JIU-JITSU</div>
+        </div>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="que-es-bjj.html">¿Qué es el BJJ?</a></li>
+                <li><a href="instalaciones.html" class="activo">Instalaciones</a></li>
+                <li><a href="tarifas.html">Tarifas</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="normas.html">Normas y Dudas</a></li>
+                <li><a href="contacto.html">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="seccion-pagina">
+        <h2 style="text-align: center; margin-bottom: 50px;">Donde empieza tu cambio</h2>
+
+        <div class="instalacion-item">
+            <div class="foto-instalacion">
+                <img src="tatami.jpg.jpeg " alt="Zona de Tatami" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=falta-foto>Falta foto: tatami.jpg</div>'">
+            </div>
+            <div class="texto-instalacion">
+                <h3>El Tatami</h3>
+                <p>Nuestra zona principal de entrenamiento. Contamos con un tatami profesional de alta absorción de impactos, diseñado para practicar derribos y lucha de suelo con total seguridad. Amplio, limpio y desinfectado diariamente.</p>
+                <ul class="lista-caracteristicas" style="list-style: none; padding: 0;">
+                    <li><i class="fas fa-check" style="color: var(--bjj-blue); margin-right: 10px;"></i> Superficie profesional y segura</li>
+                    <li><i class="fas fa-check" style="color: var(--bjj-blue); margin-right: 10px;"></i> Limpieza diaria antibacteriana</li>
+                    <li><i class="fas fa-check" style="color: var(--bjj-blue); margin-right: 10px;"></i> Protecciones en paredes</li>
+                    <li><i class="fas fa-check" style="color: var(--bjj-blue); margin-right: 10px;"></i> Zona climatizada y bien iluminada</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="separador-suave" style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+
+        <div class="instalacion-item al-reves">
+            <div class="foto-instalacion">
+                <img src="zona-descanso.jpg" alt="Zona de Espera y Comida" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=falta-foto>Falta foto: zona-descanso.jpg</div>'">
+            </div>
+            <div class="texto-instalacion">
+                <h3>Zona de Espera y Office</h3>
+                <p>Sabemos que a veces vienes directo del trabajo o esperas a que terminen tus hijos. Hemos habilitado una zona cómoda donde puedes relajarte, comer algo antes de entrenar o simplemente charlar con los compañeros.</p>
+                <ul class="lista-caracteristicas" style="list-style: none; padding: 0;">
+                    <li><i class="fas fa-coffee" style="color: var(--bjj-blue); margin-right: 10px;"></i> Mesas y sillas</li>
+                    <li><i class="fas fa-wifi" style="color: var(--bjj-blue); margin-right: 10px;"></i> Ambiente relajado</li>
+                    <li><i class="fas fa-eye" style="color: var(--bjj-blue); margin-right: 10px;"></i> Visibilidad al tatami</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="separador-suave" style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+
+        <div class="instalacion-item">
+            <div class="foto-instalacion">
+                <img src="vestuarios.jpg" alt="Vestuarios y Duchas" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=falta-foto>Falta foto: vestuarios.jpg</div>'">
+            </div>
+            <div class="texto-instalacion">
+                <h3>Vestuarios Completos</h3>
+                <p>Espacios separados para hombres y mujeres, equipados con duchas de agua caliente y bancos. Un lugar limpio y seguro para cambiarte antes y después de darlo todo en el entreno.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Vila-seca Jiu-Jitsu. Todos los derechos reservados.</p>
+    </footer>
+    
+    <div class="whatsapp-container">
+        <div id="whatsapp-mensaje" class="wa-mensaje">
+            ¿Tienes alguna duda? ¡Escríbenos! 👇
+        </div>
+        <button onclick="abrirWhatsappGeneral()" class="btn-float"><i class="fab fa-whatsapp"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector("#menu-principal ul");
+            menu.classList.toggle("activo");
+        }
+    </script>
+</body>
+</html>

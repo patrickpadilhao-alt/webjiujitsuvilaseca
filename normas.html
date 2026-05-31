@@ -183,45 +183,8 @@
                     <i class="fas fa-chevron-down"></i>
                 </button>
                 <div class="faq-respuesta">
-                    <p>Trae ropa cómoda, chanclas y agua. Ven mínimo 15 minutos antes. <strong>Rellena este formulario para reservar tu plaza:</strong></p>
-                    
-                    <div style="margin-top: 20px; background: #f5f5f5; padding: 20px; border-radius: 8px; border-left: 4px solid #25D366;">
-                        <form id="form-prueba" onsubmit="enviarPorWhatsapp(event)" style="display: flex; flex-direction: column; gap: 12px; text-align: left;">
-                            
-                            <div>
-                                <label style="font-weight: bold; font-size: 0.9rem; color: #333; display: block; margin-bottom: 5px;">Nombre Completo:</label>
-                                <input type="text" id="wa_nombre" required placeholder="Tu nombre" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
-                            </div>
-
-                            <div>
-                                <label style="font-weight: bold; font-size: 0.9rem; color: #333; display: block; margin-bottom: 5px;">Edad:</label>
-                                <input type="number" id="wa_edad" required placeholder="Ej: 25" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
-                            </div>
-
-                            <div>
-                                <label style="font-weight: bold; font-size: 0.9rem; color: #333; display: block; margin-bottom: 5px;">¿Qué día y horario quieres probar?</label>
-                                <input type="text" id="wa_horario" required placeholder="Ej: Martes por la tarde" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
-                            </div>
-
-                            <div>
-                                <label style="font-weight: bold; font-size: 0.9rem; color: #333; display: block; margin-bottom: 5px;">¿Has practicado algún deporte de contacto antes?</label>
-                                <select id="wa_experiencia" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
-                                    <option value="No, soy principiante">No, soy principiante</option>
-                                    <option value="Sí, tengo experiencia">Sí, tengo experiencia</option>
-                                </select>
-                            </div>
-
-                            <div>
-                                <label style="font-weight: bold; font-size: 0.9rem; color: #333; display: block; margin-bottom: 5px;">Si marcaste "Sí", ¿cuál y cuánto tiempo?</label>
-                                <input type="text" id="wa_detalle" placeholder="Ej: Judo, 2 años (Déjalo en blanco si no tienes)" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
-                            </div>
-
-                            <button type="submit" style="background-color: #25D366; color: white; border: none; padding: 12px; border-radius: 4px; font-weight: bold; cursor: pointer; margin-top: 10px; font-size: 1rem; transition: background 0.3s; display: flex; align-items: center; justify-content: center; gap: 8px;">
-                                <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Enviar por WhatsApp
-                            </button>
-                        </form>
-                    </div>
-                    </div>
+                    <p>Escríbenos por WhatsApp. Trae ropa cómoda, chanclas y agua. Ven mínimo 15 minutos antes.</p>
+                </div>
             </div>
 
         </div>
@@ -239,36 +202,6 @@
     <script src="script.js"></script>
     <script>
         function toggleMenu() { document.querySelector("#menu-principal ul").classList.toggle("activo"); }
-
-        // CÓDIGO DEL FORMULARIO A WHATSAPP
-        function enviarPorWhatsapp(event) {
-            event.preventDefault(); // Evita que la página se recargue
-
-            // ATENCIÓN: Cambia este número por el tuyo real
-            const telefono = "34623178222"; 
-
-            // Recoger los datos
-            const nombre = document.getElementById("wa_nombre").value;
-            const edad = document.getElementById("wa_edad").value;
-            const horario = document.getElementById("wa_horario").value;
-            const experiencia = document.getElementById("wa_experiencia").value;
-            const detalle = document.getElementById("wa_detalle").value;
-
-            // Construir el mensaje
-            let mensaje = `Hola, me gustaría reservar una clase de prueba.%0A%0A`;
-            mensaje += `*Nombre:* ${nombre}%0A`;
-            mensaje += `*Edad:* ${edad} años%0A`;
-            mensaje += `*Horario:* ${horario}%0A`;
-            mensaje += `*Experiencia:* ${experiencia}%0A`;
-            
-            if (detalle !== "") {
-                mensaje += `*Detalle:* ${detalle}%0A`;
-            }
-
-            // Crear el enlace y abrir WhatsApp
-            const url = `https://wa.me/${telefono}?text=${mensaje}`;
-            window.open(url, '_blank');
-        }
     </script>
 </body>
 </html>
