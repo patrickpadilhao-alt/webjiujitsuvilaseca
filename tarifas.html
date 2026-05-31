@@ -6,7 +6,7 @@
     
     <meta name="description" content="Aprende Brazilian Jiu-Jitsu en Vila-seca. Clases de BJJ (Gi y No-Gi) para adultos, adolescentes y niños. Instalaciones premium de 400m². ¡Solicita tu clase de prueba gratis!">
     
-    <link rel="icon" href="logo.jpg.jpeg" type="image/jpeg">
+    <link class="icon" href="logo.jpg.jpeg" type="image/jpeg">
 
     <title>Tarifas | Vila-seca Jiu-Jitsu</title>
     
@@ -39,36 +39,33 @@
         <p class="subtitulo">Elige el compromiso que mejor se adapte a tus metas.</p>
 
         <div style="background-color: #e3f2fd; color: #0055D4; padding: 15px; border-radius: 8px; display: inline-block; margin-bottom: 30px; border: 1px solid #0055D4;">
-            <i class="fas fa-info-circle"></i> <strong>MISMO PRECIO PARA TODOS:</strong> Las tarifas son válidas tanto para Adultos como para Niños.
+            <i class="fas fa-info-circle"></i> <strong>MISMO PRECIO PARA TODOS:</strong> Las tarifas son válidas tanto para Adultos como para Niños (salvo tarifa reducida de 2 días).
         </div>
 
         <div class="grid-precios">
             
             <div class="tarjeta-precio destacado">
-                <div class="etiqueta-top">¡OFERTA APERTURA!</div>
-                <h3>TARIFA FUNDADOR</h3>
+                <h3>TARIFA MENSUAL</h3>
                 
-                <p style="text-decoration: line-through; color: #999; font-size: 1.2rem; margin-bottom: -15px; margin-top: 10px;">55€</p>
                 <p class="precio">45€<span>/mes</span></p>
                 
-                <p style="font-size: 0.9rem; color: #d32f2f; font-weight: bold; margin-bottom: 15px; background: #ffebee; padding: 5px; border-radius: 4px;">
-                    <i class="fas fa-fire"></i> Solo 50 primeros Adultos y 50 Niños
-                </p>
+                <p style="font-size: 1.1rem; color: #0055D4; font-weight: bold; margin-bottom: 5px;">Sin Permanencia</p>
+                <p style="font-size: 0.9rem; color: #666; font-style: italic; margin-bottom: 20px;">Sin Matrícula</p>
 
                 <ul class="lista-ventajas-precio">
                     <li><i class="fas fa-check"></i> Clases Ilimitadas (Gi y No-Gi)</li>
                     <li><i class="fas fa-check"></i> <strong>Open Mat Incluido</strong></li>
                     <li><i class="fas fa-check"></i> Sin Matrícula de inscripción</li>
-                    <li><i class="fas fa-check"></i> Precio 45€ garantizado de por vida</li>
+                    <li><i class="fas fa-check"></i> Sin Permanencia ni compromisos</li>
                 </ul>
-                <button onclick="consultarTarifa('Tarifa Fundador (45€)')" class="btn-precio">RESERVAR PLAZA</button>
+                <button onclick="consultarTarifa('Tarifa Mensual (45€)')" class="btn-precio">RESERVAR PLAZA</button>
             </div>
 
             <div class="tarjeta-precio">
                 <h3>TRIMESTRAL</h3>
-                <p class="precio">125€<span>/3 meses</span></p>
+                <p class="precio">155€<span>/3 meses</span></p>
                 
-                <p style="font-size: 1.1rem; color: #0055D4; font-weight: bold; margin-bottom: 5px;">(Sale a 41,60€/mes)</p>
+                <p style="font-size: 1.1rem; color: #0055D4; font-weight: bold; margin-bottom: 5px;">(Sale a 51,66€/mes)</p>
                 
                 <p style="font-size: 0.9rem; color: #666; font-style: italic; margin-bottom: 20px;">Pago único trimestral</p>
                 <ul class="lista-ventajas-precio">
@@ -77,15 +74,15 @@
                     <li><i class="fas fa-check"></i> Olvídate de pagar cada mes</li>
                     <li><i class="fas fa-check"></i> Sin permanencia</li>
                 </ul>
-                <button onclick="consultarTarifa('Trimestral (125€)')" class="btn-precio" style="background: #333;">SOLICITAR INFO</button>
+                <button onclick="consultarTarifa('Trimestral (155€)')" class="btn-precio" style="background: #333;">SOLICITAR INFO</button>
             </div>
 
             <div class="tarjeta-precio">
                 <div class="etiqueta-top" style="background-color: #333;">ACCESO ILIMITADO</div>
                 <h3>ANUAL</h3>
-                <p class="precio">480€<span>/año</span></p>
+                <p class="precio">600€<span>/año</span></p>
                 
-                <p style="font-size: 1.1rem; color: #0055D4; font-weight: bold; margin-bottom: 5px;">(Sale a 40€/mes)</p>
+                <p style="font-size: 1.1rem; color: #0055D4; font-weight: bold; margin-bottom: 5px;">(Sale a 50€/mes)</p>
 
                 <p style="font-size: 0.9rem; color: #666; font-style: italic; margin-bottom: 20px;">Un solo pago anual</p>
                 <ul class="lista-ventajas-precio">
@@ -94,7 +91,23 @@
                     <li><i class="fas fa-check"></i> Prioridad en seminarios</li>
                     <li><i class="fas fa-check"></i> Camiseta del equipo de regalo</li>
                 </ul>
-                <button onclick="consultarTarifa('Anual (480€)')" class="btn-precio" style="background: #333;">SOLICITAR INFO</button>
+                <button onclick="consultarTarifa('Anual (600€)')" class="btn-precio" style="background: #333;">SOLICITAR INFO</button>
+            </div>
+
+            <div class="tarjeta-precio">
+                <h3>TARIFA NIÑOS</h3>
+                <p class="precio">35€<span>/mes</span></p>
+                
+                <p style="font-size: 1.1rem; color: #0055D4; font-weight: bold; margin-bottom: 5px;">2 días a la semana</p>
+                
+                <p style="font-size: 0.9rem; color: #666; font-style: italic; margin-bottom: 20px;">Clases infantiles adaptadas</p>
+                <ul class="lista-ventajas-precio">
+                    <li><i class="fas fa-check"></i> 2 días por semana</li>
+                    <li><i class="fas fa-check"></i> Desarrollo psicomotriz y valores</li>
+                    <li><i class="fas fa-check"></i> Sin Matrícula de inscripción</li>
+                    <li><i class="fas fa-check"></i> Sin permanencia</li>
+                </ul>
+                <button onclick="consultarTarifa('Tarifa Niños 2 días (35€)')" class="btn-precio" style="background: #333;">SOLICITAR INFO</button>
             </div>
 
         </div>
